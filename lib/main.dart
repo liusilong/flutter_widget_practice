@@ -6,11 +6,11 @@ import 'Align_widget.dart';
 
 import 'custom_tab_indicator.dart';
 
-void main() => runApp(
-  MaterialApp(
-    home: CustomTabWidget(),
-  )
-);
+import 'clip_demo.dart';
+
+void main() => runApp(MaterialApp(
+      home: ClipDemo(),
+    ));
 
 class MyApp extends StatelessWidget {
   @override
