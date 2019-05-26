@@ -8,8 +8,10 @@ import 'custom_tab_indicator.dart';
 
 import 'clip_demo.dart';
 
+import 'transform_background.dart';
+
 void main() => runApp(MaterialApp(
-      home: ClipDemo(),
+      home: TransformBackground(),
     ));
 
 class MyApp extends StatelessWidget {
