@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'stack_widget.dart';
 
@@ -10,9 +11,17 @@ import 'clip_demo.dart';
 
 import 'transform_background.dart';
 
-void main() => runApp(MaterialApp(
-      home: TransformBackground(),
-    ));
+import 'video_player.dart';
+
+import 'path_demo.dart';
+
+import 'line_picture.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: LinePicture(),
+  ));
+}
 
 class MyApp extends StatelessWidget {
   @override

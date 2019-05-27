@@ -47,16 +47,16 @@ class CustomTabWidget extends StatelessWidget {
 class CustomTabIndicator extends Decoration {
   @override
   BoxPainter createBoxPainter([VoidCallback onChanged]) {
-    return CustomPainter(this, onChanged);
+    return _CustomPainter(this, onChanged);
   }
 }
 
-class CustomPainter extends BoxPainter {
+class _CustomPainter extends BoxPainter {
   final CustomTabIndicator decoration;
   final double indicatorHeight = 15.0;
   Paint _paint;
 
-  CustomPainter(this.decoration, VoidCallback onChange)
+  _CustomPainter(this.decoration, VoidCallback onChange)
       : assert(decoration != null),
         super(onChange) {
     _paint = Paint();
