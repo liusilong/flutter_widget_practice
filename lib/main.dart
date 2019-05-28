@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_widget_practice/page_view.dart';
+import 'package:flutter_widget_practice/physical_logical_pixel.dart';
 
 import 'stack_widget.dart';
 
@@ -19,7 +21,7 @@ import 'line_picture.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: LinePicture(),
+    home: PageViewDemo(),
   ));
 }
 
