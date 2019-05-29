@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_widget_practice/page_view.dart';
+import 'package:flutter_widget_practice/path_animation.dart';
 import 'package:flutter_widget_practice/physical_logical_pixel.dart';
 
+import 'dialog_demo.dart';
+import 'line_picture2.dart';
 import 'stack_widget.dart';
 
 import 'Align_widget.dart';
