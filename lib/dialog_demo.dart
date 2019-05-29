@@ -58,6 +58,7 @@ class _DialogDemoState extends State<DialogDemo> {
   }
 }
 
+/// https://medium.com/@excogitatr/custom-dialog-in-flutter-d00e0441f1d5
 class CustomDialog extends Dialog {
   @override
   Widget build(BuildContext context) {
