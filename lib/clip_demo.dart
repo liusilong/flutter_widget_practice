@@ -30,11 +30,13 @@ Widget _customClip() {
       clipper: MyClipPath2(),
       child: Container(
         width: 200,
-
         height: 100,
         color: Colors.red,
         child: Center(
-          child: Text('Liusilong', style: TextStyle(color: Colors.white, fontSize: 20),),
+          child: Text(
+            'Liusilong',
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
         ),
       ),
     ),
@@ -48,7 +50,6 @@ Widget _customClip() {
 class CustomRect extends CustomClipper<Rect> {
   @override
   Rect getClip(Size size) {
-    print('w = ${size.width} , h = ${size.height}');
     Rect rect = Rect.fromLTRB(0, 0, size.width, size.height);
     return rect;
   }
@@ -79,6 +80,7 @@ class MyClipPath extends CustomClipper<Path> {
 }
 
 /// 自定义一个 Clip Path 2 一个 Ticket 的 Clip
+///
 class MyClipPath2 extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
@@ -86,8 +88,10 @@ class MyClipPath2 extends CustomClipper<Path> {
     path.lineTo(0, size.height);
     path.lineTo(size.width, size.height);
     path.lineTo(size.width, 0);
+    // left oval
     path.addOval(
         Rect.fromCircle(center: Offset(0.0, size.height / 2), radius: 10));
+    // right oval
     path.addOval(Rect.fromCircle(
         center: Offset(size.width, size.height / 2), radius: 10));
     path.close();

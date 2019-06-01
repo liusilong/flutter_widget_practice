@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_widget_practice/physical_logical_pixel.dart';
-import 'package:screen_orientation/screen_orientation.dart';
+//import 'package:screen_orientation/screen_orientation.dart';
 import 'dart:ui';
 
 /// 注意： 像素分为两种，物理像素和逻辑像素
@@ -14,7 +14,7 @@ class LinePicture2 extends StatefulWidget {
     // 全屏
     SystemChrome.setEnabledSystemUIOverlays([]);
     // 横屏
-    PluginScreenOrientation.setScreenOrientation(ScreenOrientation.landscape);
+//    PluginScreenOrientation.setScreenOrientation(ScreenOrientation.landscape);
   }
 
   @override
