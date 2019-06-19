@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_practice/page_view_demo.dart';
 
 import 'stack_widget.dart';
 
@@ -8,7 +9,7 @@ import 'custom_tab_indicator.dart';
 
 void main() => runApp(
   MaterialApp(
-    home: CustomTabWidget(),
+    home: PageViewDemoPage(),
   )
 );
 
