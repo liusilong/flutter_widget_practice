@@ -1,3 +1,8 @@
+
+
+
+import 'dart:async';
+
 import 'package:flutter/services.dart';
 //import 'package:screen_orientation/screen_orientation.dart';
 import 'package:flutter/material.dart';
@@ -12,11 +17,12 @@ class _LinePictureState extends State<LinePicture>
     with SingleTickerProviderStateMixin {
   ScrollController _scrollController = ScrollController();
   AnimationController _controller;
-
+  
   Animation<double> _animation;
   double sw;
   double sh;
   double ratio;
+
 
 
   @override

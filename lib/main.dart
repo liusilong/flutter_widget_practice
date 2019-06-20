@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_widget_practice/get_it/get_it_demo.dart';
+import 'package:flutter_widget_practice/get_it/locator.dart';
 import 'package:flutter_widget_practice/page_view.dart';
 import 'package:flutter_widget_practice/path_animation.dart';
 import 'package:flutter_widget_practice/physical_logical_pixel.dart';
+import 'package:flutter_widget_practice/provider/changenotifier/change_notifier_demo.dart';
+import 'package:flutter_widget_practice/provider/provider_basic.dart';
+import 'package:flutter_widget_practice/router/router_demo.dart';
 import 'package:flutter_widget_practice/safe_area.dart';
 import 'package:flutter_widget_practice/spacer_demo.dart';
+import 'package:flutter_widget_practice/transform/TransformDemo.dart';
 
 import 'container_bg.dart';
 import 'container_shadow.dart';
@@ -28,9 +34,12 @@ import 'path_demo.dart';
 import 'line_picture.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: SafeAreaDemo(),
-  ));
+  setupLocator();
+  runApp(
+    MaterialApp(
+      home: PageViewDemo(),
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {

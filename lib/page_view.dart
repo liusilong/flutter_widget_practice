@@ -19,15 +19,17 @@ class _PageViewDemoState extends State<PageViewDemo> {
     super.initState();
 //    PluginScreenOrientation.setScreenOrientation(ScreenOrientation.landscape);
     SystemChrome.setEnabledSystemUIOverlays([]);
-    pageController = new PageController(viewportFraction: 0.75);
+    pageController = new PageController(viewportFraction: 0.9);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
+            margin: EdgeInsets.only(top: 15),
             width: 200,
             height: 100,
             color: Colors.red,
@@ -41,9 +43,10 @@ class _PageViewDemoState extends State<PageViewDemo> {
               ),
             ),
           ),
-          SizedBox(
+          Container(
             width: 200,
-            height: 200,
+            height: 550,
+            color: Colors.orange,
             child: NotificationListener<ScrollNotification>(
               onNotification: (notification) {
                 if (notification is ScrollEndNotification) {
@@ -84,6 +87,7 @@ class _PageViewDemoState extends State<PageViewDemo> {
       elevation: 6,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Container(
+        height: 100,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(16),
           child: Container(
