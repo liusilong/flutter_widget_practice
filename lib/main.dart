@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_practice/page_view_demo.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_widget_practice/get_it/get_it_demo.dart';
 import 'package:flutter_widget_practice/get_it/locator.dart';
@@ -23,24 +24,11 @@ import 'Align_widget.dart';
 
 import 'custom_tab_indicator.dart';
 
-import 'clip_demo.dart';
-
-import 'transform_background.dart';
-
-import 'video_player.dart';
-
-import 'path_demo.dart';
-
-import 'line_picture.dart';
-
-void main() {
-  setupLocator();
-  runApp(
-    MaterialApp(
-      home: PageViewDemo(),
-    )
-  );
-}
+void main() => runApp(
+  MaterialApp(
+    home: PageViewDemoPage(),
+  )
+);
 
 class MyApp extends StatelessWidget {
   @override
