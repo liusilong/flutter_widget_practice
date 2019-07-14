@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:flutter_widget_practice/page_view_demo.dart';
-=======
 import 'package:flutter/services.dart';
 import 'package:flutter_widget_practice/page_view.dart';
+import 'package:flutter_widget_practice/painter_animation/PainterAnimation.dart';
 import 'package:flutter_widget_practice/path_animation.dart';
 import 'package:flutter_widget_practice/physical_logical_pixel.dart';
 import 'package:flutter_widget_practice/safe_area.dart';
 import 'package:flutter_widget_practice/spacer_demo.dart';
->>>>>>> 0c828ca0e7e776e1b300dc5622b3ca17c4d2bf3d
 
 import 'container_bg.dart';
 import 'container_shadow.dart';
@@ -21,29 +19,9 @@ import 'Align_widget.dart';
 
 import 'custom_tab_indicator.dart';
 
-<<<<<<< HEAD
-void main() => runApp(
-  MaterialApp(
-    home: PageViewDemoPage(),
-  )
-);
-=======
-import 'clip_demo.dart';
-
-import 'transform_background.dart';
-
-import 'video_player.dart';
-
-import 'path_demo.dart';
-
-import 'line_picture.dart';
-
-void main() {
-  runApp(MaterialApp(
-    home: SafeAreaDemo(),
-  ));
-}
->>>>>>> 0c828ca0e7e776e1b300dc5622b3ca17c4d2bf3d
+void main() => runApp(MaterialApp(
+      home: PainterAnimate(),
+    ));
 
 class MyApp extends StatelessWidget {
   @override
@@ -63,3 +41,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
