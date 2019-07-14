@@ -9,6 +9,7 @@ import 'package:flutter_widget_practice/pageview/pageview_zoom_transition.dart';
 import 'package:flutter_widget_practice/path_animation.dart';
 import 'package:flutter_widget_practice/physical_logical_pixel.dart';
 import 'package:flutter_widget_practice/provider/changenotifier/change_notifier_demo.dart';
+import 'package:flutter_widget_practice/provider/local_refresh.dart';
 import 'package:flutter_widget_practice/provider/provider_basic.dart';
 import 'package:flutter_widget_practice/provider/provider_demo_new.dart';
 import 'package:flutter_widget_practice/router/router_demo.dart';
@@ -42,9 +43,7 @@ import 'custom_tab_indicator.dart';
 String videoUrl =
     "https://1254467417.vod2.myqcloud.com/7b2669a8vodgzp1254467417/4aef011e5285890790854956573/b665d848c8fd99af217c6ce4.mp4";
 
-void main() => runApp(MaterialApp(
-      home: DialogDemo(),
-    ));
+void main() => runApp(LocalRefreshPage());
 
 class MyApp extends StatelessWidget {
   @override
@@ -64,5 +63,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

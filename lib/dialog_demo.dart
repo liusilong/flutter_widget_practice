@@ -8,6 +8,9 @@ class DialogDemo extends StatefulWidget {
 class _DialogDemoState extends State<DialogDemo> {
   @override
   Widget build(BuildContext context) {
+    setState(() {
+
+    });
     return Scaffold(
       body: Center(
         child: Column(
@@ -47,6 +50,10 @@ class _DialogDemoState extends State<DialogDemo> {
             ],
           );
         });
+
+    setState(() {
+
+    });
   }
 
   void _showCustomDialog() {
