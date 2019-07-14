@@ -1,26 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
 
 /// https://medium.com/flutter-community/clipping-in-flutter-e9eaa6b1721a
 
 class ClipDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var logger = Logger(
-      printer: PrettyPrinter(
-          methodCount: 2,
-          // number of method calls to be displayed
-          errorMethodCount: 8,
-          // number of method calls if stacktrace is provided
-          lineLength: 120,
-          // width of the output
-          colors: true,
-          // Colorful log messages
-          printEmojis: true,
-          // Print an emoji for each log message
-          printTime: false // Should each log print contain a timestamp
-          ),
-    );
     var map = {"a": "A", "b": "B", "c": "C", "d": "D"};
     var list = [
       1,
@@ -28,9 +12,6 @@ class ClipDemo extends StatelessWidget {
       "d",
       {"name": "Liusilong"}
     ];
-
-    logger.i(map);
-    logger.e(list);
 
     return Scaffold(
       body: _customClip(),

@@ -2,7 +2,6 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-//import 'package:screen_orientation/screen_orientation.dart';
 import 'physical_logical_pixel.dart';
 
 class PageViewDemo extends StatefulWidget {
@@ -17,7 +16,6 @@ class _PageViewDemoState extends State<PageViewDemo> {
   @override
   void initState() {
     super.initState();
-//    PluginScreenOrientation.setScreenOrientation(ScreenOrientation.landscape);
     SystemChrome.setEnabledSystemUIOverlays([]);
     pageController = new PageController(viewportFraction: 0.9);
   }

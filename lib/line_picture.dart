@@ -4,7 +4,6 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-//import 'package:screen_orientation/screen_orientation.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
@@ -34,8 +33,6 @@ class _LinePictureState extends State<LinePicture>
     print('sw = $sw; sh = $sh');
     // 全屏显示 https://stackoverflow.com/questions/46640116/make-flutter-application-fullscreen
     SystemChrome.setEnabledSystemUIOverlays([]);
-    // 横屏
-//    PluginScreenOrientation.setScreenOrientation(ScreenOrientation.landscape);
 
 
     double a = sw / ratio / 2 * 4;

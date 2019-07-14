@@ -14,11 +14,6 @@ class ProviderBasicDemo extends StatelessWidget {
   }
 }
 
-Widget builder(){
-  return StreamProvider(builder: (context){
-    return StreamController<String>();
-  });
-}
 class Example extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

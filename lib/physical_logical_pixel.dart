@@ -3,12 +3,10 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:ui';
-//import 'package:screen_orientation/screen_orientation.dart';
 
 class PhysicalLogicalPixel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-//    PluginScreenOrientation.setScreenOrientation(ScreenOrientation.landscape);
     SystemChrome.setEnabledSystemUIOverlays([]);
     return Scaffold(
       body: SingleChildScrollView(
