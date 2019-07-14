@@ -24,9 +24,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   # native_device_orientation: ^0.2.0
-  screen_orientation:
-    git:
-      url: https://github.com/liusilong/flutter_plugin_screen_orientation
+  video_player: ^0.10.1+3
+  flutter_redux: ^0.5.3
+  provider: ^3.0.0+1
+  get_it: ^1.0.3+2
+  tutorial_coach_mark: ^0.2.0
 
 
 dev_dependencies:
@@ -48,6 +50,11 @@ flutter:
   assets:
     - assets/sun.jpg
     - assets/dragon/
+    - assets/test.mp4
+    - assets/play_icon.png
+    - assets/jay/
+    - assets/back.png
+    - assets/text_flag.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

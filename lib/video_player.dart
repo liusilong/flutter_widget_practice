@@ -12,8 +12,10 @@ class _VideoAppState extends State<VideoApp> {
   @override
   void initState() {
     super.initState();
+    // http://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4
+    //
     _controller = VideoPlayerController.network(
-        'http://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4')
+        'https://1254467417.vod2.myqcloud.com/7b2669a8vodgzp1254467417/4aef011e5285890790854956573/b665d848c8fd99af217c6ce4.mp4')
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});

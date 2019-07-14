@@ -6,7 +6,6 @@ class AlignWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double top = MediaQuery.of(context).padding.top;
     return Scaffold(
         body: Container(
       width: window.physicalSize.width,

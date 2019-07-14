@@ -1,9 +1,8 @@
+import 'dart:io';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:screen_orientation/screen_orientation.dart';
-
 class PageViewDemoPage extends StatefulWidget {
   PageViewDemoPage({Key key}) : super(key: key);
 
@@ -15,7 +14,6 @@ class _PageViewDemoPageState extends State<PageViewDemoPage> {
   @override
   void initState() {
     super.initState();
-    PluginScreenOrientation.setScreenOrientation(ScreenOrientation.landscape);
     sw = window.physicalSize.width;
     sh = window.physicalSize.height;
     print('sw = $sw; sh = $sh');
@@ -78,9 +76,15 @@ class _PageViewDemoPageState extends State<PageViewDemoPage> {
             TextSpan(
                 text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
             TextSpan(text: ' world!'),
-            TextSpan(text: ' FLUTTER', style: TextStyle(color: Colors.blue, fontSize: 20)),
-            TextSpan(text: ' FLUTTERasf', style: TextStyle(color: Colors.black, fontSize: 20)),
-            TextSpan(text: ' FLUTTE', style: TextStyle(color: Colors.black, fontSize: 20))
+            TextSpan(
+                text: ' FLUTTER',
+                style: TextStyle(color: Colors.blue, fontSize: 20)),
+            TextSpan(
+                text: ' FLUTTERasf',
+                style: TextStyle(color: Colors.black, fontSize: 20)),
+            TextSpan(
+                text: ' FLUTTE',
+                style: TextStyle(color: Colors.black, fontSize: 20))
           ],
         ),
       ),

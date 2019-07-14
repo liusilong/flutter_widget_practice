@@ -5,6 +5,14 @@ import 'package:flutter/material.dart';
 class ClipDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var map = {"a": "A", "b": "B", "c": "C", "d": "D"};
+    var list = [
+      1,
+      2,
+      "d",
+      {"name": "Liusilong"}
+    ];
+
     return Scaffold(
       body: _customClip(),
     );
